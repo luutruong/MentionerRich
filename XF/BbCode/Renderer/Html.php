@@ -28,6 +28,7 @@ class Html extends XFCP_Html
         $user->setReadOnly(true);
 
         $templater = \XF::app()->templater();
+
         return $templater->fn('username_link', [$user, true]);
     }
 }
